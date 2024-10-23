@@ -11,7 +11,12 @@ export class SidebarComponent {
   constructor(private gifsService: GifsService){} //inyecta el servicio global
 
   // al ser privado debemos crear un get para poder hacer uso
-  get tags(){
+  get tags():string[]{
     return this.gifsService.tagsHistory; //me traigo los tagshistory para usarlos
+  }
+
+  //metodo para que al dar click al nombre vuelva a esa busqueda
+  searchTag(tag:string):void{
+    this.gifsService.searchTag(tag);
   }
 }
