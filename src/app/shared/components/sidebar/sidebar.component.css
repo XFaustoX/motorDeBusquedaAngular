@@ -1,0 +1,4 @@
+#sidebar{
+  height: 100vh; /*para que se vea en el 100 del viewHeight*/
+  width: 250px;
+}
