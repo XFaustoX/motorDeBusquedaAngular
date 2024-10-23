@@ -51,6 +51,8 @@ export class GifsService {
     this.searchTag( this._tagsHistory[0]);
   }
 
+  // hecho el reload
+
   searchTag( tag: string):void{
     if ( tag.length === 0) return; //para que si no se escribe nada no haga nada
     this.organizeHistory(tag);
